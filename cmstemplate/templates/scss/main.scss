@@ -1,0 +1,397 @@
+// here you import files
+@import "base/variables"; // read var first
+@import "base/mixins"; // read mixin second
+@import "base/reset";
+// @include mq-sp() {
+
+// }
+// @include mq-tb() {
+
+// }
+
+// @include mq-pc() {
+
+// }
+//*****************************
+//  *****  FONT STYLING  ****
+//*****************************
+
+h1 {
+  @include mq-sp() {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  font-family: $font;
+  font-weight: bold;
+  color: $orange;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+}
+h2 {
+  @include mq-sp() {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  font-family: $font;
+  padding: 20px 0 50px 0;
+  color: $grey;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+}
+p {
+  font-family: $font;
+  padding: 20px 0 0 0;
+  color: $grey;
+  font-size: 14px;
+  line-height: 20px;
+}
+a {
+  text-decoration: none;
+  font-family: $font;
+}
+.btn {
+  background: $green;
+  color: white;
+  padding: 20px 40px;
+  transition: all 0.3s ease-in;
+  @include mq-tb() {
+    padding: 20px 20px;
+  }
+  @include mq-sp() {
+    padding: 20px 10px;
+  }
+
+  &:hover {
+    background: $light-blue;
+  }
+}
+
+//*****************************
+//  *****  NAV STYLING  ****
+//*****************************
+#topbar {
+  overflow: auto;
+
+  background: white;
+  box-shadow: 10px -10px 30px 10px;
+  .logo {
+    float: left;
+    padding: 20px 0;
+    @include mq-pc() {
+      padding: 20px 0 20px 200px;
+    }
+    @include mq-sp() {
+      padding: 0px;
+      float: none;
+      text-align: center;
+      font-size: 13px;
+    }
+    @include mq-tb() {
+      padding: 20px 0 20px 50px;
+    }
+    img {
+      width: 100px;
+      @include mq-sp() {
+        width: 80px;
+        padding: 0px;
+      }
+    }
+  }
+  nav {
+    float: right;
+    margin: 50px 400px 0 0;
+
+    @include mq-tb() {
+      margin: 50px 50px 0 0;
+      font-size: 20px;
+    }
+    @include mq-sp() {
+      margin: 0px;
+      float: none;
+      text-align: center;
+    }
+
+    a {
+      display: inline-block;
+      margin: 0 0 0 50px;
+      text-decoration: none;
+      font-family: $font;
+      font-weight: bold;
+      color: $orange;
+      padding: 10px;
+      transition: all 0.3s ease-in;
+      @include mq-tb() {
+        margin: 0 0 0 30px;
+        font-size: 20px;
+      }
+      @include mq-sp() {
+        margin: 0px;
+        font-size: 14px;
+      }
+      &:hover {
+        color: $light-blue;
+        border: 1px solid $light-blue;
+      }
+    }
+  }
+}
+
+//*****************************
+//  *****  FOOTER STYLING  ****
+//*****************************
+
+footer {
+  background: bisque;
+  width: 100%;
+  height: 420px;
+
+  text-align: center;
+  margin: 200px 0 0 0;
+  box-shadow: -20px -20px 50px -30px black;
+  .footertext {
+    padding: 20px 0;
+  }
+  i {
+    color: $orange;
+    font-size: 25px;
+    padding: 0 50px 100px 50px;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: chocolate;
+      font-size: 35px;
+    }
+  }
+  .date {
+    padding: 50px 0;
+    img {
+      width: 100px;
+    }
+    p {
+      font-family: $font;
+      font-weight: bold;
+      color: $orange;
+      width: 50%;
+      margin: 0 auto;
+      padding: 0px;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+//*****************************
+//  *****  HOME PAGE ****
+//*****************************
+#headerImage {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 52vh;
+  @include mq-tb() {
+    height: 52vh;
+  }
+}
+#wrapper {
+  @include mq-pc() {
+    background-size: cover;
+  }
+
+  @include mq-tb() {
+    background-size: contain;
+  }
+
+  .contentwrapper {
+    width: 100%;
+    margin: 0 auto;
+
+    #hero {
+      background-size: contain;
+      width: 100%;
+      background-position: 50%;
+      margin: 50px auto;
+      background-repeat: no-repeat;
+      height: 40vh;
+      @include mq-sp() {
+        margin: 0px;
+        height: 25vh;
+      }
+    }
+    #content {
+      padding: 0 0 50px 0;
+      text-align: center;
+      max-width: 1000px;
+      line-height: 25px;
+      margin: 0 auto;
+    }
+
+    .subcontent {
+      width: 50%;
+
+      text-align: center;
+      margin: 0 auto;
+      @include mq-tb() {
+        width: 80%;
+        text-align: left;
+      }
+      @include mq-sp() {
+        width: 90%;
+        text-align: left;
+      }
+    }
+    .subimage {
+      width: 100%;
+      background-position: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 200px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+//*****************************
+//  *****  TEAM PAGE ****
+//*****************************
+#teamwrapper {
+  h1 {
+    margin: 100px 0 0 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    @include mq-sp() {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+  .contentgrid {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    @include mq-tb() {
+      width: 100%;
+    }
+    .profilegrid {
+      .profile {
+        width: 25%;
+        padding: 50px;
+
+        float: left;
+        @include mq-tb() {
+          width: 50%;
+        }
+        @include mq-sp() {
+          width: 100%;
+        }
+        p {
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .subcontent {
+      text-align: left;
+      width: 50%;
+      margin: 0 auto;
+      @include mq-tb() {
+        width: 80%;
+      }
+    }
+  }
+}
+
+//*****************************
+//  *****  CONTACT PAGE ****
+//*****************************
+
+#contactwrapper {
+  h1 {
+    padding: 100px 0 0 0;
+  }
+  #contacthero {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    width: 100%;
+    height: 40vh;
+  }
+  .contentgrid {
+    width: 50%;
+    margin: 0 auto;
+    @include mq-tb() {
+      width: 80%;
+    }
+    @include mq-sp() {
+      width: 100%;
+    }
+    .subcontent {
+      padding: 50px;
+    }
+  }
+}
+//*****************************
+// ***** GET INVOLVED PAGE ****
+//*****************************
+#getInvolvedWrapper {
+  @include mq-pc() {
+    background-size: cover;
+  }
+
+  @include mq-tb() {
+    background-size: contain;
+  }
+  .contentwrapper {
+    width: 50%;
+    margin: 0 auto;
+
+    @include mq-sp() {
+      margin: 50px auto;
+    }
+    #hero {
+      background-size: contain;
+      width: 100%;
+      background-position: 50%;
+      margin: 50px auto;
+      background-repeat: no-repeat;
+      height: 40vh;
+      @include mq-sp() {
+        margin: 0px;
+        height: 25vh;
+      }
+    }
+    #content {
+      padding: 0 0 50px 0;
+      text-align: center;
+      max-width: 1000px;
+      line-height: 25px;
+      margin: 0 auto;
+    }
+
+    .subcontent {
+      width: 50%;
+
+      text-align: center;
+      margin: 0 auto;
+      @include mq-sp() {
+        width: 90%;
+        text-align: left;
+      }
+    }
+    .subimage {
+      width: 100%;
+      background-position: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 200px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}

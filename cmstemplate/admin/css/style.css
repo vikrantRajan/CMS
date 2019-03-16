@@ -1,0 +1,558 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* CMS Login Page */
+.CMSLoginwrapper {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+.halfpaneTwo {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top: 0px;
+}
+.CMSlogin article {
+  padding: 40px 0 0 0;
+}
+.CMSlogin article h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.CMSlogin article p {
+  color: #777;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 20px 0px;
+}
+
+.CMSlogin article form input[type="text"],
+.CMSlogin article form input[type="password"] {
+  font-size: 14px;
+  color: #017dc6;
+  border-radius: 6px;
+  border: none;
+  background: #eee;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.CMSlogin article form input[type="submit"] {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: none;
+  background: dodgerblue;
+  transition: all 0.6s ease-in;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.CMSlogin article form input[type="submit"]:hover {
+  background: #00fff8;
+  color: white;
+  box-shadow: 0px 0px 40px 20px rgb(183, 245, 252);
+}
+/* SLIDER */
+.slider {
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+.slide_viewer {
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background-image: url(../imgs/CMSBanners1.jpg);
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-of-type(2) {
+  background-image: url(../imgs/CMSBanners2.jpg);
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-of-type(3) {
+  background-image: url(../imgs/CMSBanners3.jpg);
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-of-type(4) {
+  background-image: url(../imgs/CMSBanners4.jpg);
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active,
+.slide_btn:hover {
+  color: #428cc6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
+.previous_btn,
+.next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover,
+.next_btn:hover {
+  opacity: 1;
+}
+
+.fill {
+  background-image: url(../imgs/universe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper {
+  background: #ddd;
+  opacity: 0.9;
+  width: 50%;
+  margin: 0 auto;
+  height: 100vh;
+}
+.halfpane {
+  float: right;
+  max-width: 400px;
+  padding-top: 200px;
+}
+.login {
+  text-align: center;
+}
+.login article {
+  padding: 40px;
+}
+.login article h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.login article h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #777;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 22px;
+  padding: 20px 0px 40px 0;
+}
+.login article a {
+  padding: 10px 20px;
+  background: dodgerblue;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 10px 200px;
+  float: left;
+  transition: 0.3s all ease-in;
+}
+
+.login article a:hover {
+  background: #00fff8;
+  color: white;
+  box-shadow: 0px 0px 40px 20px rgb(183, 245, 252);
+}
+.login article form input[type="text"],
+.login article form input[type="password"] {
+  font-size: 14px;
+  color: #017dc6;
+  border-radius: 30px;
+  border: none;
+  background: #eee;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login article form input[type="submit"] {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: none;
+  background: dodgerblue;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login article form input[type="submit"]:hover {
+  background: #00fff8;
+  color: white;
+  box-shadow: 0px 0px 40px 20px rgb(183, 245, 252);
+}
+
+nav {
+  width: 100%;
+  background: #59c0e2;
+  text-align: center;
+  padding: 40px 0;
+  box-shadow: 0px -1px 5px 5px rgb(87, 237, 255);
+}
+nav a {
+  padding: 40px 50px;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+nav a:hover {
+  background: #00fff854;
+  color: white;
+  box-shadow: 0px 0px 40px 10px rgb(183, 245, 252);
+}
+
+/* PAGES */
+.pages article {
+  padding: 40px;
+}
+.action a {
+  text-decoration: none;
+  background: dodgerblue;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 30px 0;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.action a:hover {
+  background: #00fff8;
+  color: white;
+  box-shadow: 0px 0px 40px 20px rgb(183, 245, 252);
+}
+
+.pages article h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pages article h2 {
+  color: #777;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.pages article form input[type="text"],
+.pages article form input[type="password"] {
+  font-size: 14px;
+  color: #017dc6;
+  border-radius: 30px;
+  border: none;
+  background: #eee;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pages article form input[type="submit"] {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: none;
+  background: #017dc6;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pages article form input[type="submit"]:hover {
+  background: royalblue;
+}
+
+.recordRow,
+.recordRowHeader {
+  display: block;
+  overflow: auto;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
+.recordRow .recordCell,
+.recordRowHeader .recordCell {
+  float: left;
+}
+
+.recordRow .name,
+.recordRowHeader .name {
+  width: 50%;
+}
+
+.recordRowHeader .edit,
+.recordRowHeader .delete,
+.recordRow .edit,
+.recordRow .delete {
+  width: 25%;
+  text-align: center;
+}
+
+.recordRow .edit a {
+  color: black;
+  transition: 0.3s all ease-in;
+}
+
+.recordRow .edit a:hover {
+  color: #00fff8;
+}
+
+.recordRowHeader {
+  background: skyblue;
+}
+
+.recordRowHeader .recordCell {
+  font-weight: bold;
+}
+
+.recordRow .delete a {
+  color: black;
+  transition: 0.3s all ease-in;
+}
+
+.recordRow .delete a:hover {
+  color: #00fff8;
+}
+
+.recordRow:nth-child(even) {
+  background: #ccc;
+}
+
+.recordRow:nth-child(odd) {
+  background: #ddd;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.btn.primary {
+  background: skyblue;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: 0.3s all ease-in;
+}
+
+.btn.primary:hover {
+  background: dodgerblue;
+}
+
+.msg {
+  font-size: 12px;
+  color: #666;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.success {
+  color: #4f8a10;
+  background-color: #dff2bf;
+  margin-bottom: 10px;
+}
+
+/* PAGE FORM */
+
+.pageForm article {
+  padding: 40px;
+  background: white;
+}
+
+.pageForm article h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.pageForm article p {
+  color: #777;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 20px 0px;
+}
+
+.pageForm article form input[type="text"],
+.pageForm article form input[type="password"] {
+  font-size: 14px;
+  color: #017dc6;
+  border-radius: 30px;
+  border: none;
+  background: #eee;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pageForm article form input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 5px;
+  transition: 0.3s all ease-in;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: none;
+  background: dodgerblue;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pageForm article form input[type="submit"]:hover {
+  background: #00fff8;
+  color: white;
+  box-shadow: 0px 0px 40px 20px rgb(183, 245, 252);
+}
+textarea {
+  width: 100%;
+  background: skyblue;
+  border: 0px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 20px;
+}
+select {
+  background: skyblue;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.formImageContainer {
+  width: 100%;
+  margin: 0 0 220px 0;
+}
+.formImage {
+  width: 50%;
+  float: left;
+}
+@media screen and (max-width: 800px) {
+  nav a {
+    padding: 40px 5px;
+    font-size: 14px;
+  }
+  .login article a {
+    padding: 10px 80px;
+    margin: 10px 100px;
+  }
+  .wrapper {
+    background: #ddd;
+    opacity: 0.9;
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 400px) {
+  .wrapper {
+    background: #ddd;
+    opacity: 0.9;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  .login article a {
+    padding: 40px 200px;
+    margin: 10px 100px;
+  }
+
+  nav a {
+    padding: 40px 20px;
+    font-size: 24px;
+  }
+}

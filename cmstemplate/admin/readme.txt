@@ -1,0 +1,1 @@
+notice the folder structure! The admin should be standalone if needed
